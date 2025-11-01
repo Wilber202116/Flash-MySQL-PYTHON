@@ -143,7 +143,7 @@ def delete_movie(id):
     try:
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("DELETE FROM peliculas WHERE id = %s", ())# la coma en id es necesario, esto es una dupla
+        cursor.execute(f"DELETE FROM peliculas WHERE id = {id}", ())# la coma en id es necesario, esto es una dupla
         conn.commit()
         return cursor.rowcount > 0
     except mysql.connector.Error as err:
@@ -151,4 +151,5 @@ def delete_movie(id):
         return False
     finally:
         if cursor: cursor.close()
+
         if conn: conn.close()
