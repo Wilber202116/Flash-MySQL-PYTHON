@@ -1,5 +1,5 @@
 // Trabajando el frontend
-const API_URL = "http://127.0.0.1:5000/movies/"
+const API_URL = "https://flash-mysql-python.onrender.com/movies/"
 
 // UTILIDADES
     // Uso del res con fetch
@@ -222,6 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // Crear peliculas
+
 
 
 
