@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+</head>
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="level mb-4">
+                <div class="level-left">
+                    <h1 id="custom_title" class="title is-1">Listas de Peliculas</h1>
+                </div>
+                <div class="level-right">
+                    <button class="button is-primary" 
+                    onclick="window.location.href='Form.html'">
+                    <span>Agregar pelicula</span></button>
+                </div>
+            </div>
+
+            <div class="box mb-4">
+                <div class="columns is-multiline">
+                    <div class="column is-one-quarter">
+                        <input type="text" id="filter_calificacion"
+                        class="input" placeholder="Calificación">
+                    </div>
+                    <div class="column is-one-quarter">
+                        <input type="text" id="filter_genero"
+                        class="input" placeholder="Genero">
+                    </div>
+                    <div class="column is-one-quarter">
+                        <button id="filter_btn" class="button is-primary">
+                            <span>Filtrar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container box">
+                <table id="movies-table"
+                class="table is-striped is-hoverable is-fullwidth">
+                    <thead>
+                        <!-- Primera de la tabla -->
+                        <tr>
+                            <th>ID</th>
+                            <th>Titulo</th>
+                            <th>Director</th>
+                            <th>Año</th>
+                            <th>Genero</th>
+                            <th>Calificacion</th>
+                            <th>Imagen</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
